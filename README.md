@@ -2,7 +2,7 @@
 practical 1
 
 
-KEY2 
-https://github.com/Goossee/practical/tree/main/Key2
 
+[Key2](https://github.com/Goossee/practical/tree/main/Key2)
 
+Ny b luin
