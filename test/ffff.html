@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEY3</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f5f5f5;
+        }
+
+        .slider-wrapper {
+            display: flex;
+            align-items: center;
+            width: 90%;
+            max-width: 1000px;
+            position: relative;
+        }
+
+        .slider-container {
+            width: 100%;
+            margin: 20px 0;
+            position: relative;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: white;
+        }
+
+        .slider {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+            height: auto;
+            aspect-ratio: 16/9;
+        }
+
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+        }
+
+        .slider-controls {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        .counter {
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+        }
+
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .btn-prev, .btn-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10;
+            background-color: rgba(76, 175, 80, 0.7);
+            padding: 90px 16px;
+        }
+
+        .btn-prev {
+            left: -60px;
+        }
+
+        .btn-next {
+            right: -60px;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+        .btn:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+
+        .navigation {
+            display: flex;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="slider-wrapper">
+        <button class="btn btn-prev" id="prevBtn">←</button>
+        
+        <div class="slider-container">
+            <div class="slider" id="slider">
+                <div class="slide">
+                    <img src="https://source.unsplash.com/random/800x450?nature=1" alt="Nature 1">
+                </div>
+                <div class="slide">
+                    <img src="https://source.unsplash.com/random/800x450?nature=2" alt="Nature 2">
+                </div>
+                <div class="slide">
+                    <img src="https://source.unsplash.com/random/800x450?nature=3" alt="Nature 3">
+                </div>
+                <div class="slide">
+                    <img src="https://source.unsplash.com/random/800x450?nature=4" alt="Nature 4">
+                </div>
+            </div>
+            
+            <div class="slider-controls">
+                <div class="counter">
+                    <span id="currentSlide">1</span> / <span id="totalSlides">4</span>
+                </div>
+
+            </div>
+        </div>
+        
+        <button class="btn btn-next" id="nextBtn">→</button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const slider = document.getElementById('slider');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            const currentSlide = document.getElementById('currentSlide');
+            const totalSlides = document.getElementById('totalSlides');
+            
+            const slides = document.querySelectorAll('.slide');
+            const slideCount = slides.length;
+            let currentIndex = 0;
+            let autoPlayInterval;
+            
+            
+            totalSlides.textContent = slideCount;
+            
+            // обновление слайдера
+            function updateSlider() {
+                slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+                currentSlide.textContent = currentIndex + 1;
+                
+                
+                prevBtn.disabled = currentIndex === 0;
+                nextBtn.disabled = currentIndex === slideCount - 1;
+            }
+            // следслайд
+             function nextSlide() {
+                currentIndex = (currentIndex + 1) % slideCount;
+                updateSlider();
+            }
+            // Ппред слайд
+            function prevSlide() {
+                currentIndex = (currentIndex - 1 + slideCount) % slideCount;
+                updateSlider();
+            } 
+            
+            nextBtn.addEventListener('click', nextSlide);
+            prevBtn.addEventListener('click', prevSlide);
+          
+            // Инициализация слайдера
+            updateSlider();
+        });
+    </script>
+</body>
+</html>
