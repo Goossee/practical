@@ -11,17 +11,17 @@ document.addEventListener('DOMContentLoaded', function() {
             // Устанавливаем начальную позицию
             updateSlider();
             
-            // Обработчики событий для кнопок
+            
             prevBtn.addEventListener('click', goToPrevSlide);
             nextBtn.addEventListener('click', goToNextSlide);
             
-            // Функция для перехода к предыдущему слайду
+            
             function goToPrevSlide() {
                 currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
                 updateSlider();
             }
             
-            // Функция для перехода к следующему слайду
+            // переход к следующему слайду
             function goToNextSlide() {
                 currentIndex = (currentIndex + 1) % totalSlides;
                 updateSlider();
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 counter.textContent = `Изображение ${currentIndex + 1} из ${totalSlides}`;
             }
             
-            // Добавляем обработчики клавиатуры
+            // клава тык тык
             document.addEventListener('keydown', function(e) {
                 if (e.key === 'ArrowLeft') {
                     goToPrevSlide();
