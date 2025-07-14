@@ -2,7 +2,7 @@
 <h1 align="center">Практика 
 </h1>
 <h3 align="center">
-<a href="#Key1">Кейс-задача № 1:</a>
+<a href="#Key1">Кейс-задача № 1:</a><br>
 <a href="https://github.com/Goossee/practical/tree/main/Key2">Кейс-задача № 2:</a><br>
 <a href= "https://github.com/Goossee/practical/tree/main/key3">Кейс-задача № 3:</a><br>
 <a href= "https://github.com/Goossee/practical/tree/main/key4">Кейс-задача № 4:</a><br>
