@@ -2,10 +2,10 @@
 <h1 align="center">Практика 
 </h1>
 <h3 align="center">
-<a href="#Key1">Кейс-задача № 1:</a><br>
-<a href="https://github.com/Goossee/practical/tree/main/Key2">Кейс-задача № 2:</a><br>
-<a href= "https://github.com/Goossee/practical/tree/main/key3">Кейс-задача № 3:</a><br>
-<a href= "https://github.com/Goossee/practical/tree/main/key4">Кейс-задача № 4:</a><br>
+<a href="#Key1">Кейс-задача № 1</a><br>
+<a href="https://github.com/Goossee/practical/tree/main/Key2">Кейс-задача № 2</a><br>
+<a href= "https://github.com/Goossee/practical/tree/main/key3">Кейс-задача № 3</a><br>
+<a href= "https://github.com/Goossee/practical/tree/main/key4">Кейс-задача № 4</a><br>
 <a href= "https://github.com/Goossee/practical/tree/main/key5">Кейс-задача № 5</a><br>
 </h3>
 <a href="https://github.com/Goossee/practical/tree/main/Key1"><h1 id='Key1'>Кейс-задача № 1</h1></a>
