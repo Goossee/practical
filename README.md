@@ -1,6 +1,6 @@
-# <b>Practical</b>
+# <b>Пактика</b>
 
-<h1 align="center">Practical 
+<h1 align="center">Практика 
 </h1>
 <h3 align="center">
 <a href="#Key1">Кейс-задача № 1:</a>
