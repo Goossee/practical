@@ -5,7 +5,7 @@
 <a href="#Key1">Кейс-задача № 1</a><br>
 <a href="https://github.com/Goossee/practical/tree/main/Key2">Кейс-задача № 2</a><br>
 <a href="https://github.com/Goossee/practical/tree/main/key3">Кейс-задача № 3</a><br>
-<a href="#Key3">Кейс-задача № 4</a><br>
+<a href="#Key4">Кейс-задача № 4</a><br>
 <a href="#Key5">Кейс-задача № 5</a><br>
 </h3>
 <a href="https://github.com/Goossee/practical/tree/main/Key1"><h1 id='Key1'>Кейс-задача № 1</h1></a>
@@ -114,9 +114,13 @@
   Разделение приложения на независимые сервисы (Docker, Kubernetes).  
 </pre>
 <h1><a id="#Key4">Кейс-задача № 4</a></h1>
-
-
-<h1><a id= "#Key5">Кейс-задача № 5</a></h1>
+<pre>
+           
+</pre>
+<h1><a id="#Key5">Кейс-задача № 5</a></h1>
+<pre>
+           
+</pre>
 
 [Key2](https://github.com/Goossee/practical/tree/main/Key2)
 
