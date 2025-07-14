@@ -113,11 +113,11 @@
 - **Microservices**  
   Разделение приложения на независимые сервисы (Docker, Kubernetes).  
 </pre>
-<h1><a id="#Key4">Кейс-задача № 4</a></h1>
+<a href="https://github.com/Goossee/practical/tree/main/Key4"><h1 id='Key4'>Кейс-задача № 4</h1></a>
 <pre>
            
 </pre>
-<h1><a id="#Key5">Кейс-задача № 5</a></h1>
+<a href="https://github.com/Goossee/practical/tree/main/Key5"><h1 id='Key5'>Кейс-задача № 5</h1></a>
 <pre>
            
 </pre>
