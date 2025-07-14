@@ -140,14 +140,7 @@
 
 ## 3. ⚙️ Выбор инструментов
 Принятые технические решения:
-```html
-<!-- Пример структуры -->
-<div class="slider">
-  <img src="image1.jpg" class="slide active">
-  <button class="prev">◀</button>
-  <button class="next">▶</button>
-  <div class="counter">1/3</div>
-</div>
+           
 Почему Vanilla JS?
 
 🚀 Нет лишних зависимостей
