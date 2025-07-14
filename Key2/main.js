@@ -90,5 +90,5 @@ function main() {
   console.log(formatDateWithStars(day, month, year));
 }
 
-// 
+// run
 main();
