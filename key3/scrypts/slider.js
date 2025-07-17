@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-            // Массив изображений для слайдера
+// Массив изображений для слайдера
     const images = [
         'https://i.pinimg.com/originals/d3/71/2b/d3712bb23cf4e191e65cf938d55e8982.jpg',
         'https://i.pinimg.com/736x/52/d5/85/52d58536c27c472994567c03a4071785.jpg',
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
         slider.appendChild(slide);
     });
 
-// Обновляем позицию слайдера и счетчик
+// позиция слайдера и счетчик
     function updateSlider() {
         slider.style.transform = `translateX(-${currentIndex * 100}%)`;
         counter.textContent = `Изображение ${currentIndex + 1} из ${images.length}`;
